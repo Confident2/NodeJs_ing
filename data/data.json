@@ -1,17 +1,20 @@
 [
   {
+    "id": 1,
     "first-name": "John",
     "last-name": "Doe",
     "age": 30,
     "sex": "Male"
   },
   {
+    "id": 2,
     "first-name": "Jane",
     "last-name": "Smith",
     "age": 25,
     "sex": "Female"
   },
   {
+    "id": 3,
     "first-name": "Alex",
     "last-name": "Johnson",
     "age": 28,
