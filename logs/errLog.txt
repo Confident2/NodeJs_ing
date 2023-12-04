@@ -3,3 +3,14 @@
 20231130	16:06:01	0306e905-d2eb-42ad-9862-e3874a35dfaf	Error: Not allowed by CORS
 20231130	16:08:23	a990c23f-6819-4515-a371-93613254e74d	Error: Not allowed by CORS
 20231130	16:08:35	b31939dc-1604-4bbc-a7b7-64c54105a38e	Error: Not allowed by CORS
+20231201	16:54:01	d2d55015-aab7-4272-bd42-25ef4ef7793c	SyntaxError: Unexpected token } in JSON at position 46
+20231204	16:09:34	4c8c0ea9-98c0-417c-9067-ecda8414a9fa	ReferenceError: employee is not defined
+20231204	16:09:46	5ece3328-c9d2-4696-b384-bc1b2a8b2aff	ReferenceError: employee is not defined
+20231204	16:10:08	7bc9aec6-c0c7-4ca5-ae86-66876ec0c4dd	ReferenceError: employee is not defined
+20231204	16:12:29	bb1418eb-0a06-4015-9978-d5456bc34967	ReferenceError: employee is not defined
+20231204	16:12:31	80bfb3fa-4209-4d26-8968-4ac893c3c34d	ReferenceError: employee is not defined
+20231204	16:32:56	c6853084-6c4f-494e-a4b8-78086de4bf37	ReferenceError: employee is not defined
+20231204	16:32:57	fc6172f7-5049-4278-aa8f-6675acb93b9d	ReferenceError: employee is not defined
+20231204	16:37:28	f7c9a831-e8a3-4574-8f3f-c426293da989	ReferenceError: employee is not defined
+20231204	16:37:29	ac7761fc-96bf-4db8-813a-f19610271516	ReferenceError: employee is not defined
+20231204	16:40:10	8854e415-243b-4f83-a489-57c37c69bfb3	ReferenceError: employee is not defined
