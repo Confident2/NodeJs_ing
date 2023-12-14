@@ -1,11 +1,14 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUser: function (data) {
-    this.users = data;
-  },
-};
-const fsPromises = require("fs").promises;
-const path = require("path");
+// writing to local database in the system file
+// const usersDB = {
+//   users: require("../model/users.json"),
+//   setUser: function (data) {
+//     this.users = data;
+//   },
+// };
+// const fsPromises = require("fs").promises;
+// const path = require("path");
+
+const User = require("../model/User");
 const { use } = require("../routes/root");
 
 const handleLogout = async (req, res) => {
@@ -17,25 +20,28 @@ const handleLogout = async (req, res) => {
   const refreshToken = cookies.jwt;
 
   // Is refreshToken in db?
-  const foundUser = usersDB.users.find(
-    (person) => person.refreshToken === refreshToken
-  );
+  const foundUser = await User.findOne({ refreshToken }).exec();
   if (!foundUser) {
     res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
     return res.sendStatus(204); // success for No content
   }
   // Delete refreshToken
-  const otherUsers = usersDB.users.filter(
-    (person) => person.refreshToken !== foundUser.refreshToken
-  );
-  const currentUser = { ...foundUser, refreshToken: " " };
-  usersDB.setUser([...otherUsers, currentUser]);
-  await fsPromises.writeFile(
-    path.join(__dirname, "..", "model", "users.json"),
-    JSON.stringify(usersDB.users)
-  );
-  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true }); // secure: true - only serves on https
-  res.sendStatus(204);
+  foundUser.refreshToken = "";
+  const result = await foundUser.save();
+  console.log(result);
+
+  // Writing to the json in the file system
+  // const otherUsers = usersDB.users.filter(
+  //   (person) => person.refreshToken !== foundUser.refreshToken
+  // );
+  // const currentUser = { ...foundUser, refreshToken: " " };
+  // usersDB.setUser([...otherUsers, currentUser]);
+  // await fsPromises.writeFile(
+  //   path.join(__dirname, "..", "model", "users.json"),
+  //   JSON.stringify(usersDB.users)
+  // );
+  // res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true }); // secure: true - only serves on https
+  // res.sendStatus(204);
 };
 
 module.exports = { handleLogout };

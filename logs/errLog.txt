@@ -14,3 +14,10 @@
 20231204	16:37:28	f7c9a831-e8a3-4574-8f3f-c426293da989	ReferenceError: employee is not defined
 20231204	16:37:29	ac7761fc-96bf-4db8-813a-f19610271516	ReferenceError: employee is not defined
 20231204	16:40:10	8854e415-243b-4f83-a489-57c37c69bfb3	ReferenceError: employee is not defined
+20231207	16:38:06	ddfd8e38-6456-4c7f-b2ce-a9f12f71c99f	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:38:07	f9e7680f-4b0f-489c-bde5-b7c301219f81	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:38:15	0292d002-51d0-43dc-9c3b-6a0967bc1af6	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:50:16	6db19ed0-6a12-4d6b-bec1-182c54bd3cfc	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:53:30	d4092a93-3740-4324-ac40-55d5fb9e490e	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:53:30	3e6f4199-2213-4bf5-8beb-f62447c535c7	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
+20231207	16:54:18	47d56898-ba70-459c-a875-b4e06a6bd9da	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Documents\Node\views\index.html'
