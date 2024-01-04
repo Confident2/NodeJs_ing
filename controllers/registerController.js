@@ -33,7 +33,7 @@ const handleNewUser = async (req, res) => {
     });
 
     console.log(result);
-
+    // res.redirect("../views/index.html");
     // Using direct MongoDB and express js and writing to local file system
 
     // usersDB.setUser([...usersDB.users, newUser]);
